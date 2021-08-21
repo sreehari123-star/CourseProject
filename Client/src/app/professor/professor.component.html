@@ -1,0 +1,18 @@
+<div class="main">
+    <div class="left">
+        <h5>
+        <hr>
+        <img src="https://previews.123rf.com/images/jovanas/jovanas1602/jovanas160201751/52212539-book-logo-black.jpg" height="50em" width="50em">
+        <a routerLink="addcourse" routerLinkActive="active"> Add Course </a><br><br><hr>
+        <img src="https://t4.ftcdn.net/jpg/03/32/59/65/360_F_332596535_lAdLhf6KzbW6PWXBWeIFTovTii1drkbT.jpg" height="50em" width="50em">
+        <a routerLink="studlist" routerLinkActive="active"> Student List </a><br><br><hr>
+        <img src="https://www.pngitem.com/pimgs/m/24-248555_profile-unknown-hd-png-download.png" height="50em" width="50em">
+        <a routerLink="mentor" routerLinkActive="active"> Mentor List </a><br><br><hr>
+        <img src="https://library.kissclipart.com/20180915/bqe/kissclipart-arrow-hand-clipart-arrow-pointer-hand-8257f47a9c372901.png" height="50em" width="50em">
+        <a routerLink="#" *ngIf="_auth.loggedIn()" (click)="logoutUser()"> Log Out </a>
+        </h5>
+    </div>
+    <div class="right">
+        <router-outlet></router-outlet>
+    </div>
+</div>

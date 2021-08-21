@@ -1,0 +1,82 @@
+.main{
+    /* background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190617/ourmid/pngtree-blue-technology-e-commerce-learning-education-business-poster-banner-image_123753.jpg"); */
+    background-image: url("https://img2.storyblok.com//f/90801/2880x1200/56dc4bded9/dark-23.jpg"); 
+    background-size: cover;
+    background-position: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.home h1{
+    text-align: center;
+    color: white;
+}
+
+.home h5{
+    text-align: center;
+    color: white;
+}
+
+.body h4{
+    margin-left: 1.59em;
+}
+
+#box1{
+    border: 1px solid lightgray;
+    float: left;
+    margin-left: 2.3em;
+    height: 21.8em;
+    margin-top: 4em;
+}
+
+#box1:hover{
+    /* color: black; */
+    transition: 0.5s ease-in-out;
+    border: solid 2px rgb(3, 3, 3);
+    -moz-box-shadow: 10px 10px 5px rgb(14, 12, 12);
+    -webkit-box-shadow: 10px 10px 5px rgb(5, 5, 5);
+    box-shadow: 10px 10px 5px rgb(32, 31, 31);
+}
+
+#box1 h5{
+    margin-left: 0.8em;
+}
+
+#h{
+    margin-left: 1em;
+    color: grey;
+}
+
+#box2{
+    border: 1px solid lightgray;
+    color: grey;
+    padding-left: 1em;
+    height: 2.5em;
+    padding-top: 5px;
+}
+
+/* button{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 100px;
+    border: 1px solid orangered;
+    background-color: orangered;
+    padding: 0.8em;
+    margin-left: 45%;
+} */
+
+.home a:hover{
+    background-color: rgb(184, 53, 5);
+    border: 1px solid rgb(184, 53, 5);
+    transition: 0.5s ease-in-out;
+}
+
+.home a{
+    color: white;
+    border: 1px solid orangered;
+    background-color: orangered;
+    border-radius: 100px;
+    padding: 1em;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 45%;
+}

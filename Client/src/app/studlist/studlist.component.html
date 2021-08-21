@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th> Name </th>
+                    <th> Email </th>
+                    <th> Contact </th>
+                    <th> Qualification </th>
+                    <th> CourseName </th>
+                    <th> Approve Status </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let enroll of enroll">
+                    <td> {{ enroll.name }} </td>
+                    <td> {{ enroll.email }} </td>
+                    <td> {{ enroll.contact }} </td>
+                    <td> {{ enroll.qualification }} </td>
+                    <td> {{ enroll.coursename }} </td>
+                    <td> <a routerLink="/status" style="color: green;text-decoration: none;">Approve Notify</a> </td>
+                    <td> <button (click)="setSaving($event.target, 'Approved')" id="btn1">Approve</button> </td>
+                    <td> <button id="btn2" *ngIf="_auth.loggedIn()"(click)="deleteStudent(enroll)">Reject</button> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

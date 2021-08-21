@@ -1,0 +1,39 @@
+.table{
+    /* background-image: url("https://i.pinimg.com/originals/bf/fe/ed/bffeedff5331ec32b734faeee26ff2fe.jpg"); */
+    background-image: url("https://iphonewalls.net/wp-content/uploads/2014/09/Blue%20Neon%20Illuminated%20Computer%20Keyboard%20iPhone%206%20Plus%20HD%20Wallpaper-320x480.jpg");
+    background-size: cover;
+}
+
+label{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 2em;
+}
+
+input{
+    border-radius: 50px;
+    width: 80%;
+    border: 1px solid rgb(206, 201, 201);
+    height: 2.5em;
+    background-color: rgb(223, 221, 221);
+}
+
+#submit{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding:0.5em;
+    border: 1px solid rgb(211, 206, 206);
+    color: white;
+    border-radius: 50px;
+    width: 195%;
+    margin-left: 3.5%;
+    /* background-color: rgb(163, 159, 159); */
+    /* background-color: rgb(211, 206, 206); */
+}

@@ -1,0 +1,47 @@
+.aboutus{
+    background-image: url("https://miro.medium.com/max/1400/1*WMTl7gEqpvWOhitx01DDRQ.jpeg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+#about{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    border: 1px solid white;
+    margin-left: 25em;
+    margin-right: 25em;
+    border-radius: 50px;
+    padding: 2em;
+}
+
+img{
+    float: right;
+    margin-right: 2em;
+}
+
+.body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 2em;
+}
+
+.body h4{
+    color: grey;
+}
+
+.bottom{
+    background-color: lightgrey;
+    padding: 1em;
+}
+
+.bottom h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(87, 85, 85);
+    text-align: center;
+}
+
+.bottom h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(87, 85, 85);
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav navbar-right">  
+            <a class="nav-link"  routerLink="/"> HOME </a>
+            <a class="nav-link" routerLink="/courses" routerLinkActive="active"> COURSES </a>
+            <a class="nav-link" routerLink="/aboutus" routerLinkActive="active"> ABOUT US </a>
+            <!-- <a class="nav-link" routerLink="/mentorsignin" *ngIf="!_auth.loggedIn()" routerLinkActive="active"> PROFESSOR </a> -->
+            <a class="nav-link" routerLink="/login" *ngIf="!_auth.loggedIn()" routerLinkActive="active"> LOG IN </a>
+            <a class="nav-link" routerLink="/signup" *ngIf="!_auth.loggedIn()" routerLinkActive="active"> SIGN UP </a>
+      </ul>
+    </div>
+</nav>    

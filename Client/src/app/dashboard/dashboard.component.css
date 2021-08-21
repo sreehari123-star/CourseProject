@@ -1,0 +1,64 @@
+ .body h4{
+    margin-left: 1.5em;
+    color: rgb(51, 50, 50);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid rgb(236, 235, 235); 
+    background-color: rgb(236, 235, 235);
+    border-radius: 50px;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    height: 2.5em;
+}
+
+#board{
+    float: right;
+    margin-top: 1em;
+    margin-right: 2em;
+    color: rgb(51, 51, 51);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#box1{
+    border: 1px solid lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    background-color: whitesmoke;
+    margin-left: 2em;
+    height: 21.5em;
+    margin-top: 2em;
+}
+
+#box1 h5{
+    margin-left: 0.8em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#h{
+    margin-left: 1em;
+    color: grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#box2{
+    border: 1px solid lightgray;
+    color: grey;
+    padding-left: 1em;
+    height: 1.9em;
+    padding-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+    margin-left: 1em;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 50px;
+    border: 2px solid green;
+    background-color: green;
+    width: 10em;
+    height: 3em;
+} 
+
+
+
+

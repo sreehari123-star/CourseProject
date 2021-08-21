@@ -1,0 +1,16 @@
+<div>
+    <br><br>
+    <h3> PROFESSOR LOG IN </h3><br>
+    <h6> (**Login to explore and continue !! Applicable to Professors ) </h6><br>
+    <h6> Click here to login for User. <a routerLink="/login"> Log In </a></h6><br><br>
+    
+    <form (ngSubmit)="loginUser()" class="form">
+        <label for="uname1" id="email"><b> Email </b></label><br>
+        <input type="text" name="uname" [(ngModel)]="user.uname" placeholder="Email"><br><br><br>
+       
+        <label id="password"><b> Password </b></label><br>
+        <input type="password" name="password" [(ngModel)]="user.password" placeholder="Password"><br><br><br>
+       
+        <input type="submit" value="Sign In" id="signin"><br><br>
+    </form>
+</div>

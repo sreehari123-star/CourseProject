@@ -1,0 +1,59 @@
+<div>
+    <br><br>
+    <h3> PROFESSOR SIGN UP </h3><br>
+    <h6> ( **Please register here to create an account. Already have an account ? <a routerLink="/mentorsignin">Log In</a> ) </h6><br>
+    <h6 style="color: red;"> If you are a user, click here for user registeration. <a routerLink="/signup"> Sign Up </a></h6><br><br>
+
+    <form class="form" #signUpForm="ngForm" (ngSubmit)="signUpForm.valid && AddMentor(signUpForm)">
+        <label><b> *Full Name </b></label><br>
+        <input type="text" #fullName="ngModel" name="fname" [(ngModel)]="mentorItem.fullName" placeholder="Enter Your Name" required
+        [ngClass]="{'invalid-textbox' : signUpForm.submitted && !fullName.valid}"><br><br><br><br>
+        <div *ngIf="signUpForm.submitted && !fullName.valid">
+            <label class="validation-message" style="color: red;"> This field is required. </label>
+        </div>
+
+        <label><h6> *Email </h6></label><br>
+            <input type="text" #email="ngModel" name="email" [(ngModel)]="mentorItem.email" placeholder="Enter your Email" required
+             [pattern]="emailRegex" [ngClass]="{'invalid-textbox' : signUpForm.submitted && !email.valid}"><br><br><br><br>
+             <div *ngIf="signUpForm.submitted && !email.valid">
+                 <label class="validation-message" style="color: red;"> This field is required. </label>
+             </div>
+            
+        <label><h6> *Contact </h6></label><br>
+            <input type="number" #contact="ngModel" name="contact" [(ngModel)]="mentorItem.contact" placeholder="Enter Your Contact" required
+            [ngClass]="{'invalid-textbox' : signUpForm.submitted && !contact.valid}"><br><br><br><br>
+             <div *ngIf="signUpForm.submitted && !contact.valid">
+                 <label class="validation-message" style="color: red;"> This field is required. </label>
+             </div>
+                             
+        <label><h6> *Address </h6></label><br>
+            <input type="text" #address="ngModel" name="address" [(ngModel)]="mentorItem.address" placeholder="Enter Your Address" required
+            [ngClass]="{'invalid-textbox' : signUpForm.submitted && !address.valid}"><br><br><br><br>
+             <div *ngIf="signUpForm.submitted && !address.valid">
+                 <label class="validation-message" style="color: red;"> This field is required. </label>
+             </div>
+        
+        <label><h6> *City of Residence </h6></label><br>
+            <input type="text" #city="ngModel" name="city" [(ngModel)]="mentorItem.city" placeholder="Enter Your City" required
+            [ngClass]="{'invalid-textbox' : signUpForm.submitted && !city.valid}"><br><br><br><br>
+             <div *ngIf="signUpForm.submitted && !city.valid">
+                 <label class="validation-message" style="color: red;"> This field is required. </label>
+             </div>  
+            
+        <label><h6> *Qualification </h6></label><br>
+            <input type="text" #qualification="ngModel" name="qualify" [(ngModel)]="mentorItem.qualification" placeholder="Enter Your Qualification" required
+            [ngClass]="{'invalid-textbox' : signUpForm.submitted && !qualification.valid}"><br><br><br><br>
+             <div *ngIf="signUpForm.submitted && !qualification.valid">
+                 <label class="validation-message" style="color: red;"> This field is required. </label>
+             </div>   
+           
+        <label><h6> *Experience </h6></label><br>
+            <input type="text" #experience="ngModel" name="experience" [(ngModel)]="mentorItem.experience" placeholder="Enter Your Experience" required
+            [ngClass]="{'invalid-textbox' : signUpForm.submitted && !experience.valid}"><br><br><br><br>
+             <div *ngIf="signUpForm.submitted && !experience.valid">
+                 <label class="validation-message" style="color: red;"> This field is required. </label>
+             </div>     
+            
+            <input type="submit" value="Sign Up" id="signup"><br><br><br>
+    </form>
+</div><br><br>

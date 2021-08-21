@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th> Name </th>
+                    <th> Email </th>
+                    <th> Contact </th>
+                    <th> Address </th>
+                    <th> City </th>
+                    <th> Qualification </th>
+                    <th> Experience </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let mentor of mentor">
+                    <td> {{ mentor.fullName }} </td>
+                    <td> {{ mentor.email }} </td>
+                    <td> {{ mentor.contact }} </td>
+                    <td> {{ mentor.address }} </td>
+                    <td> {{ mentor.city }} </td>
+                    <td> {{ mentor.qualification }} </td>
+                    <td> {{ mentor.experience }} </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

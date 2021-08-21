@@ -1,0 +1,32 @@
+h4{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(36, 34, 34, 0.87);
+    padding: 1em;
+    color: white;
+}
+
+#box1{
+    border: 1px solid lightgray;
+    float: left;
+    margin-left: 2.3em;
+    height: 21.8em;
+    margin-top: 4em;
+}
+
+#box1 h5{
+    margin-left: 0.8em;
+}
+
+#h{
+    margin-left: 1em;
+    color: grey;
+}
+
+#box2{
+    border: 1px solid lightgray;
+    color: grey;
+    padding-left: 1em;
+    height: 2.5em;
+    padding-top: 5px;
+}

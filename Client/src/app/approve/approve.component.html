@@ -1,0 +1,12 @@
+<form (ngSubmit)="AddStatus()">
+    <h6> Message </h6><br><br>
+    <label> Name &nbsp;&nbsp;</label>
+    <input type="text" name="name" [(ngModel)]="statusItem.studName"><br><br>
+    <label> Email &nbsp;&nbsp;</label>
+    <input type="text" name="email" [(ngModel)]="statusItem.studEmail"><br><br>
+    <label> Status &nbsp;&nbsp;</label>
+    <input type="text" name="status" [(ngModel)]="statusItem.studStatus"><br><br>
+    <label> Icon &nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" name="icon" [(ngModel)]="statusItem.studIcon"><br><br><br>
+    <input type="submit" value="Submit" id="button">
+</form>

@@ -1,0 +1,46 @@
+div{
+    background-image: url("https://a-static.besthdwallpaper.com/keyboard-letter-wallpaper-1920x1080-16850_48.jpg");
+    background-size: cover;
+    /* background-color: rgb(54, 53, 53); */
+    /* background-color: rgb(231, 231, 147); */
+    /* border: 1px solid rgb(231, 231, 147); */
+    /* margin-left: 20em; */
+    /* margin-right: 20em; */
+    /* margin-top: 2em; */
+    /* margin-bottom: 2em; */
+}
+
+div h3{
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div h6{
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form input{
+    margin-left: 30em;
+    width: 25em;
+    height: 2.5em;
+    border-radius: 50px;
+    border: 1px solid lightgray;
+}
+
+#signin{
+    margin-left: 39em;
+    width: 7em;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(35, 140, 245);
+    border: 2px solid rgb(5, 125, 245);
+}
+
+.form label{
+    margin-left: 31em;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

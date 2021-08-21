@@ -1,0 +1,20 @@
+<div class="main">
+    <div class="left">
+        <h5>
+        <hr>
+            <img src="https://icon-library.com/images/home-icon-transparent/home-icon-transparent-1.jpg" height="40em" width="40em">
+            <a routerLink="dashboard" routerLinkActive="active"> Dashboard </a><br><br><hr>
+            <img src="https://t4.ftcdn.net/jpg/03/32/59/65/360_F_332596535_lAdLhf6KzbW6PWXBWeIFTovTii1drkbT.jpg" height="40em" width="40em">
+            <a routerLink="userprofile" routerLinkActive="active"> Profile </a><br><br><hr>
+            <img src="https://previews.123rf.com/images/jovanas/jovanas1602/jovanas160201751/52212539-book-logo-black.jpg" height="40em" width="40em">
+            <a routerLink="enroll" routerLinkActive="active"> Enroll </a><br><br><hr>
+            <img src="https://icons-for-free.com/iconfiles/png/512/facebook+message+notification+icon-1320166641066201393.png" height="40em" width="40em">
+            <a routerLink="notify" routerLinkActive="active"> Notifications </a><br><br><hr>
+            <img src="https://library.kissclipart.com/20180915/bqe/kissclipart-arrow-hand-clipart-arrow-pointer-hand-8257f47a9c372901.png" height="40em" width="40em">
+            <input type="button" (click)="onLogout()" value="Logout" />
+        </h5>
+    </div>
+    <div class="right">
+        <router-outlet></router-outlet>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.table{
+    background-image: url("https://c0.wallpaperflare.com/preview/839/136/850/peripherals-mouse-keyboard-mice.jpg");
+    background-size: cover;
+    /* background-color: rgb(223, 221, 221); */
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+    border-radius: 50px;
+    border: 2px solid lightgray;
+    padding: 5px;
+    width: 6em;
+}
+
+ #btn1:hover{
+    background-color: darkgreen;
+    border: 2px solid darkgreen;
+    transition: 0.5s ease-in-out;
+}
+
+#btn2:hover{
+    background-color: darkred;
+    border: 2px solid darkred;
+    transition: 0.5s ease-in-out;
+}
+
+#btn1{
+    color: white;
+    background-color: green;
+    border: 2px solid green;
+    /* margin-top: 0.5em; */
+}
+
+#btn2{
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+}

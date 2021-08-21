@@ -1,0 +1,40 @@
+.main{
+    background-size: cover;
+    background-image: url("https://wallpaperaccess.com/full/4525433.jpg");
+}
+
+.main h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding:0.5em;
+    border: 1px solid rgb(216, 206, 206);
+    /* color: rgb(51, 50, 50); */
+    color: white;
+    border-radius: 50px;
+    width: 95%;
+    margin-left: 3.5%;
+    /* background-color: rgb(211, 206, 206); */
+}
+
+.main p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 1em;
+    color: white;
+}
+
+.main label{
+    /* border: 1px solid lightgray; */
+    /* background-color: rgb(105, 171, 216); */
+    border: 1px solid rgb(236, 235, 235);
+    /* background-color: rgb(236, 235, 235); */
+    border-radius: 50px;
+    width: 95%;
+    height: 2.5em;
+    /* color: rgb(51, 51, 51); */
+    color: white;
+    margin-left: 2em;
+    padding-top: 10px;
+    padding-left: 16.7em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 

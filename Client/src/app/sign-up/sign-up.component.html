@@ -1,0 +1,64 @@
+<div>
+    <br>
+    <h3> SIGN UP </h3>
+    <h6> ( **Please register here to create an account. Login and explore !! ) </h6><br> 
+    <h6 style="color: red;"> Click here to register for Professors. &nbsp;&nbsp; <a routerLink="/mentorsignup"> Sign Up </a> &nbsp;&nbsp; ( **Applicable only to Professors ) </h6><br><br>
+
+     <!--Success Message-->
+    <div class="success" *ngIf="showSuccessMessage" id="true">
+        Saved Successfully
+    </div>
+
+    <!--Error Message-->
+    <div class="alert" *ngIf="serverErrorMessages" id="false">
+        {{serverErrorMessages}}
+    </div>
+
+    <form class="form" #signUpForm="ngForm" (ngSubmit)="signUpForm.valid && onSubmit(signUpForm)">
+        <label><b> *Full Name </b></label><br>
+        <input type="text" #fullName="ngModel" [(ngModel)]="userService.selectedUser.fullName" name="fullName" placeholder="Enter Your Full Name" 
+        required [ngClass]="{'invalid-textbox' : signUpForm.submitted && !fullName.valid}"><br><br><br><br>
+        <div *ngIf="signUpForm.submitted && !fullName.valid">
+            <label class="validation-message" style="color: red;"> This field is required. </label>
+        </div>
+        <label><b> *Email </b></label><br>
+        <input type="text" #email="ngModel" [(ngModel)]="userService.selectedUser.email" name="email" placeholder="Enter Your Mail Id"
+        required [pattern]="emailRegex" [ngClass]="{'invalid-textbox' : signUpForm.submitted && !email.valid}"><br><br><br><br>
+        <div *ngIf="signUpForm.submitted && email.errors">
+            <label *ngIf="email.errors.required" class="validation-message" style="color: red;">This field is required.</label>
+            <label *ngIf="email.errors.pattern" class="validation-message" style="color: red;">Invalid email address.</label>
+        </div>
+        <label><b>*Password</b></label><br>
+        <input type="password" #password="ngModel" [(ngModel)]="userService.selectedUser.password" name="password" placeholder="Enter Your Password"
+        minlength="4" required [ngClass]="{'invalid-textbox' : signUpForm.submitted && !password.valid}"><br><br><br><br>
+        <div *ngIf="signUpForm.submitted && password.errors">
+            <label *ngIf="password.errors.required" class="validation-message" style="color: red;"> This field is required. </label>
+            <label *ngIf="password.errors.minlength" class="validation-message" style="color: red;"> Enter atleast 4 characters. </label>
+        </div>
+        <label><b> *Address </b></label><br>
+        <input type="text" #address="ngModel" [(ngModel)]="userService.selectedUser.address" name="address" placeholder="Enter Your Address"
+        required [ngClass]="{'invalid-textbox' : signUpForm.submitted && !address.valid}"><br><br><br><br>
+        <div *ngIf="signUpForm.submitted && !address.valid"><br><br>
+            <label class="validation-message" style="color: red;"> This field is required. </label>
+        </div>
+        <label><b> *City </b></label><br>
+        <input type="text" #city="ngModel" [(ngModel)]="userService.selectedUser.city" name="city" placeholder="Enter Your City" 
+        required [ngClass]="{'invalid-textbox' : signUpForm.submitted && !city.valid}"><br><br><br><br>
+        <div *ngIf="signUpForm.submitted && !city.valid">
+            <label class="validation-message" style="color: red;"> This field is required. </label>
+        </div>
+        <label><b> *Qualification </b></label><br>
+        <input type="text" #qualification="ngModel" [(ngModel)]="userService.selectedUser.qualification" name="qualification" placeholder="Enter Your Qualification"
+        required [ngClass]="{'invalid-textbox' : signUpForm.submitted && !qualification.valid}"><br><br><br><br>
+        <div *ngIf="signUpForm.submitted && !qualification.valid">
+            <label class="validation-message" style="color: red;"> This field is required. </label>
+        </div>
+        <label><b> *Institution </b></label><br>
+        <input type="text" #institution="ngModel" [(ngModel)]="userService.selectedUser.institution" name="institution" placeholder="Enter Your Institution"
+        required [ngClass]="{'invalid-textbox' : signUpForm.submitted && !institution.valid}"><br><br><br><br>
+        <div *ngIf="signUpForm.submitted && !institution.valid">
+            <label class="validation-message" style="color: red;"> This field is required. </label>
+        </div>
+        <input type="submit" value="Sign Up" id="signup"><br><br><br>
+    </form>
+</div><br><br>

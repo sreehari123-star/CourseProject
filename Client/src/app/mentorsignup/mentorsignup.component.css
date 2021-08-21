@@ -1,0 +1,48 @@
+div{
+    /* background-image: url("https://a-static.besthdwallpaper.com/keyboard-letter-wallpaper-1920x1080-16850_48.jpg"); */
+    background-image: url("https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVkJTIwa2V5Ym9hcmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+    background-size: cover;
+    /* background-color: rgb(80, 78, 78); */
+    /* border: 1px solid rgb(243, 206, 86); */
+    /* margin-left: 15em; */
+    /* margin-right: 15em; */
+    /* margin-top: 2em; */
+    /* margin-bottom: 2em; */
+}
+
+div h3{
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div h6{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.form input{
+    margin-left: 36%;
+    width: 24em;
+    height: 2.5em;
+    border-radius: 50px;
+    border: 1px solid lightgray;
+    float: left;
+}
+
+#signup{
+    width: 7em;
+    margin-left: 38em;
+    border: 2px solid dodgerblue;
+    background-color: rgb(3, 127, 250);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 3em;
+}
+
+.form label{
+    color: white;
+    margin-left: 38%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

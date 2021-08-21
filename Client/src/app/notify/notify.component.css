@@ -1,0 +1,15 @@
+.table{
+    /* background-image: url("https://i.pinimg.com/originals/bf/fe/ed/bffeedff5331ec32b734faeee26ff2fe.jpg"); */
+    background-image: url("https://iphonewalls.net/wp-content/uploads/2014/09/Blue%20Neon%20Illuminated%20Computer%20Keyboard%20iPhone%206%20Plus%20HD%20Wallpaper-320x480.jpg");
+    background-size: cover;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.table-responsive{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(21, 21, 73);
+    color: white;
+    padding-top: 10px;
+}

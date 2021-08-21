@@ -1,0 +1,27 @@
+<div>
+    <br><br>
+    <h3> LOG IN </h3><br>
+    <h6> (**Login to explore and continue !!,<br><br> Please remember your mail id and password registered for logging in....) </h6><br>
+    <h6> Click here to login for Professors. <a routerLink="/mentorsignin"  routerLinkActive="active" *ngIf="!_auth.loggedIn()"> Log In </a></h6><br>
+    <!--Error message-->
+    <div class="alert" *ngIf="serverErrorMessages">
+        {{serverErrorMessages}}
+    </div>
+    <br>
+    
+    <form class="form" #signInForm="ngForm" (ngSubmit)="signInForm.valid && onSubmit(signInForm)">
+        <label><b> Email </b></label><br>
+        <input type="text" name="email" #email="ngModel" [(ngModel)]="model.email" placeholder="Email" [pattern]="emailRegex" required
+        [ngClass]="{'invalid-textbox' : signInForm.submitted && !email.valid}"><br><br><br>
+        <div *ngIf="signInForm.submitted && email.errors?.pattern">
+            <label class="validation-message" style="color: red;"> Invalid Email Address. </label>
+        </div>
+        <label><b> Password </b></label><br>
+        <input type="password" name="password" #password="ngModel" [(ngModel)]="model.password" placeholder="Password" required minlength="4"
+        [ngClass]="{'invalid-textbox' : signInForm.submitted && !password.valid}"><br><br><br>
+        <div *ngIf="signInForm.submitted && password.errors?.minlength">
+            <label class="validation-message" style="color: red;"> Minimum 4 characters. </label>
+        </div>
+        <input type="submit" value="Sign In" id="signin"><br><br>
+    </form>
+</div><br><br>

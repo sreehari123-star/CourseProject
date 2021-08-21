@@ -1,0 +1,57 @@
+.table{
+    background-image: url("https://i.pinimg.com/736x/0c/8f/04/0c8f04c55a8abfcbb48711dcc6ea53f0.jpg");
+    background-size: cover;
+}
+
+label{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 2em;
+}
+
+input{
+    border-radius: 50px;
+    width: 80%;
+    border: 1px solid rgb(221, 215, 215);
+    /* background-color: rgb(221, 215, 215); */
+    height: 2.5em;
+}
+
+#submit{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+
+
+button {
+    font-size: 1.4em;
+  }
+  
+  .counter {
+    font-size: 1.5em;
+  }
+  
+  .blue {
+    color: blue;
+    font-size: 2em;
+  }
+  
+  .red {
+    color: red;
+    font-size: 2em;
+  }
+
+  h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding:0.5em;
+    border: 1px solid rgb(202, 200, 200);
+    color: white;
+    border-radius: 50px;
+    width: 210%;
+    margin-left: 3.5%;
+    /* background-color: rgb(211, 206, 206); */
+    /* background-color: rgb(163, 159, 159); */
+}

@@ -1,0 +1,35 @@
+<div class="card">
+    <form (ngSubmit)="AddEnroll()">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody><br>
+                        <h4> ENROLL </h4><br><br>
+                        <tr>
+                            <td><label><h5> Name </h5></label></td>
+                            <td><input type="text" name="e_name" [(ngModel)]="enrollItem.name"></td><br><br><br><br>
+                        </tr>
+                        <tr>
+                            <td><label><h5> Email </h5></label></td>
+                            <td><input type="text" name="e_email" [(ngModel)]="enrollItem.email"></td><br><br><br><br>
+                        </tr>
+                        <tr>
+                            <td><label><h5> Contact </h5></label></td>
+                            <td><input type="number" name="e_contact" [(ngModel)]="enrollItem.contact"></td><br><br><br><br>
+                        </tr>
+                        <tr>
+                            <td><label><h5> Qualification </h5></label></td>
+                            <td><input type="text" name="e_qualification" [(ngModel)]="enrollItem.qualification"></td><br><br><br><br>
+                        </tr>
+                        <tr>
+                            <td><label><h5> CourseName </h5></label></td>
+                            <td><input type="text" name="e_coursename" [(ngModel)]="enrollItem.coursename"></td><br><br><br><br>
+                        </tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit" id="submit"></td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div><br>

@@ -1,0 +1,14 @@
+<div class="body">
+    <h6 id="board"> Dashboard </h6>
+    <h4> {{ userDetails.fullName }} </h4> 
+    <div class="box">
+        <div id="box1" *ngFor='let course of course'>
+            <img [src]="course.imageUrl" height="150em" width="300em"><br>
+            <h6 id="h"> {{ course.courseId }} </h6>
+            <h5> {{ course.courseName }} </h5>
+            <h5> {{ course.courseTitle }} </h5>
+            <button routerLink="/user/enroll">ENROLL</button><br><br>
+            <h6 id="box2"> {{ course.courseSection }} </h6>
+        </div>
+    </div>
+</div>

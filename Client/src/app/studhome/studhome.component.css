@@ -1,0 +1,42 @@
+.home{
+    background-image: url("https://c0.wallpaperflare.com/preview/722/962/382/learn-student-laptop-internet.jpg");
+    background-size: cover;
+    background-position: top;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.body img{
+    float: right;
+    margin-right: 2em;
+}
+
+.body h4{
+    margin-left: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+}
+
+.body p{
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(65, 64, 64);
+    margin-left: 3em;
+}
+
+.body button{
+    border-radius: 50px;
+    border: 2px solid orange;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: orange;
+    padding: 1em;
+    width: 20em;
+}
+
+.body button:hover{
+    background-color: rgb(253, 186, 62);
+    border: rgb(253, 186, 62);
+    transition: 0.5s ease-in-out;
+}

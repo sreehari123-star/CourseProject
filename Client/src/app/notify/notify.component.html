@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="table-responsive">
+        STUDENT LIST COURSE STATUS RESULTS <br><br>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th> Name </th>
+                <th> Email </th>
+                <th> Status </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let status of status">  
+                <td> {{ status.studName }} </td>
+                <td> {{ status.studEmail }} </td>
+                <td> {{ status.studStatus }} </td>
+                <td> {{ status.studIcon }} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

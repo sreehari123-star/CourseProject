@@ -1,0 +1,36 @@
+<div class="card">
+    <form (ngSubmit)="AddCourse()">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <br>
+                    <tbody>
+                        <h4> ADD COURSE </h4><br><br>
+                        <tr>
+                            <td><label><h5> Course Id </h5></label></td>
+                            <td><input type="text" name="c_id" [(ngModel)]="courseItem.courseId"></td><br><br><br><br>
+                        </tr>
+                        <tr>
+                            <td><label><h5> Course Name </h5></label></td>
+                            <td><input type="text" name="c_name" [(ngModel)]="courseItem.courseName"></td><br><br><br><br>
+                        </tr>
+                        <tr>
+                            <td><label><h5> Course Title </h5></label></td>
+                            <td><input type="text" name="c_title" [(ngModel)]="courseItem.courseTitle"></td><br><br><br><br>
+                        </tr>
+                        <tr>
+                            <td><label><h5> Course Sections </h5></label></td>
+                            <td><input type="text" name="c_section" [(ngModel)]="courseItem.courseSection"></td><br><br><br><br>
+                        </tr>
+                        <tr>
+                            <td><label><h5> Course Image </h5></label></td>
+                            <td><input type="text" name="c_image" [(ngModel)]="courseItem.imageUrl"></td><br><br><br><br>
+                        </tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit" id="submit"></td>
+                    </tbody><br>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
